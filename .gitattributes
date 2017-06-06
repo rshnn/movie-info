@@ -1,0 +1,13 @@
+*.sh eol=lf
+*.js eol=lf
+*.json eol=lf
+*.py eol=lf
+*.scss eol=lf
+*.html eol=lf
+*.txt eol=lf
+*.yml eol=lf
+*.md eol=lf
+*.repo eol=lf
+Dockerfile* eol=lf
+alias-bash eol=lf
+* text=auto
