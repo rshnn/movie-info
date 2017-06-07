@@ -6,7 +6,6 @@ const MovieInfoComponent = {
     controller, 
     templateUrl: movieinfoTemplate
 
-
 };
 
 export default MovieInfoComponent;
