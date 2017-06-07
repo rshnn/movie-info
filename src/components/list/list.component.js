@@ -4,6 +4,7 @@ import ListTemplate from './list.html';
 
 const ListComponent = {
     controller, 
+    controllerAs: 'model',
     templateUrl: ListTemplate
 };
 
