@@ -45,6 +45,7 @@
     "angular": "~1.5.8",
     "angular-animate": "~1.5.8",
     "angular-aria": "~1.5.8",
+    "angular-component-router-noscope": "^0.2.0",
     "angular-material": "~1.1.0",
     "angular-messages": "~1.5.8",
     "bootstrap": "^3.3.7",

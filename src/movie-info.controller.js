@@ -1,7 +1,6 @@
 class MovieInfoController { 
 
-
-	constructor(){}
+    constructor(){}
 
 
 }

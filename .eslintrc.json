@@ -48,7 +48,7 @@
             "exceptions": ["x", "y", "z", "i", "j", "k", "e", "d", "w", "h",
                 "a", "b", "_"]
         }],
-        "indent": [2, 4, {"SwitchCase": 1, "VariableDeclarator": 1}],
+        // "indent": [2, 4, {"SwitchCase": 1, "VariableDeclarator": 1}],
         "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
         "max-len": [1, {"code": 80, "ignoreUrls": true}],
         "no-whitespace-before-property": 2,

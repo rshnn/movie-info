@@ -1,3 +1,5 @@
-<div>	
-	Inside rating controller
-</div>
+<span ng-repeat="entry in model.entries track by $index">
+	<ng-transclude>
+		*
+	</ng-transclude>
+</span>
