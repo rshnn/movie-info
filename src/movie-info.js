@@ -1,11 +1,17 @@
 import angular from 'angular';
-import ngComponentRouter from 'angular-component-router-noscope';
+import ngRoute from 'angular-route';
 
 import Components from './components';
 import MovieInfoComponent from './movie-info.component';
 
 angular.module('MovieInfo', [
-	ngComponentRouter,
+	ngRoute,
     Components
 ])
-.component('movieInfo', MovieInfoComponent);
+.component('movieInfo', MovieInfoComponent)
+.config(function($routeProvider){
+	$routeProvider
+		.when('/list', {template: '<movie-info-list> </movie-info-list>'})
+		.when('/about', {template: '<movie-info-about></movie-info-about>'})
+		.otherwise({redirectTo: '/list'});
+});
