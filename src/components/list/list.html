@@ -13,9 +13,10 @@
 			<td>{{movie.title}}</td>
 			<td>{{movie.length}}</td>
 			<td>
-				<movie-info-rating value="movie.rating">
-					<span class="glyphicon glyphicon-star"></span>
-				</movie-info-rating>
+				<movie-info-rating value="movie.rating" max="5" 
+									set-rating="model.setRating(movie, value)">
+<!-- 					<span class="glyphicon glyphicon-star"></span>
+ -->				</movie-info-rating>
 			</td>
 			<td>
 				<div class="btn-group">
@@ -31,6 +32,17 @@
 	</table>
 
 
+
+<movie-info-accordian>
+	<accordian-panel heading="First Panel">
+		This is panel 1
+	</accordian-panel>	
+
+	<accordian-panel heading="Second Panel">
+		This is panel 2
+	</accordian-panel>	
+
+</movie-info-accordian>
 
 
 </div>

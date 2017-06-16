@@ -1,0 +1,17 @@
+body{
+	padding:10px; 
+	background-color: #ccccbb;
+}
+
+movie-info-accordian .ng-enter{
+	animation:fadeIn 0.5s;
+}
+
+
+movie-info-accordian .ng-leave {
+	animation: fadeOut 0.5s;
+}
+
+.ng-cloak{
+	display: none;
+}

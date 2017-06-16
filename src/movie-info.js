@@ -1,11 +1,15 @@
+import './sass/main.scss';
+
 import angular from 'angular';
 import ngRoute from 'angular-route';
+import ngAnimate from 'angular-animate';
 
 import Components from './components';
 import MovieInfoComponent from './movie-info.component';
 
 angular.module('MovieInfo', [
 	ngRoute,
+	ngAnimate, 
     Components
 ])
 .component('movieInfo', MovieInfoComponent)

@@ -4,9 +4,10 @@ import RatingTemplate from './rating.html';
 
 const RatingComponent = {
     bindings: {
-        value: '<'
+        value: '<', 
+        max: '<', 
+        setRating: '&'
     }, 
-    transclude: true,
     controller, 
     controllerAs: 'model', 
     templateUrl: RatingTemplate

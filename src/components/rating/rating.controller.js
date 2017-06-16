@@ -10,18 +10,32 @@ class RatingController {
 
 	
 	$onChanges(changes){
-		// console.log(changes);
-
 		if(changes.value.isFirstChange()){
 			return;
 		}
-
-
-		this.entries = new Array(changes.value.currentValue);
-
-
-
+		this.entries = this.buildEntries(this.value, this.max);
 	}
+
+
+	$onInit(){
+		this.entries = new Array(this.max);
+	}
+
+
+	buildEntries(value, max){
+		var entries = [];
+		var i;
+		var icon;
+
+
+		for (i = 1; i <= max; i++){
+			icon = i <= value ? 'glyphicon-star' : 'glyphicon-star-empty';
+			entries.push(icon);
+		}
+
+		return entries; 
+	}
+
 
 }
 

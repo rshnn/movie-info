@@ -33,6 +33,11 @@ class ListController {
     }
 
 
+    setRating(movie, newRating){
+
+        movie.rating = newRating;
+
+    }
 
     changeMessage(){
         var model = this;
